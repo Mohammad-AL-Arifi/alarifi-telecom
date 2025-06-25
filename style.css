@@ -4,6 +4,11 @@ body {
   font-family: 'Cairo', sans-serif;
   background-color: #f0f4f8;
   direction: rtl;
+
+
+
+
+
 }
 
 .header {
@@ -12,18 +17,46 @@ body {
   text-align: center;
   padding: 1rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo-space {
-  height: auto;
   width: 50px;
+  height: 50px; /* أضف ارتفاع ثابت */
   position: absolute;
-  left: 1rem;
-  top: 1rem;
-  font-size: 1rem;
-  color: #dbe9f4;
- /* background-image: ;  */
-  /* size: 10%; */
+  right: 1rem; /* غيرت من left إلى right لأن الصفحة RTL */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-space img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* يحافظ على نسبة الشعار */
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+/* تنسيقات الزر */
+.sms-button {
+  display: inline-block;
+  background-color: #006c99;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.sms-button:hover {
+  background-color: #00557a;
 }
 
 .packages-grid {

@@ -85,6 +85,8 @@ packages.forEach(pkg => {
   const card = document.createElement("div");
   card.className = "package-card";
 
+  const smsText = `طلب باقة ${pkg.title} - ${pkg.price}`;
+
   card.innerHTML = `
     <div class="badge">جديد</div>
     ${pkg.type? `<div class="network"> ${pkg.type} </div>` : ""}
@@ -95,6 +97,7 @@ packages.forEach(pkg => {
     ${pkg.sms ? `<div class="package-detail"><span>✉️</span><span>${pkg.sms} رسالة لكل الشبكات</span></div>` : ""}
 
     ${pkg.duration ? `<div class="package-detail"><span>⏰</span> ${pkg.duration}</div>` : ""}
+    <a href="sms:777632660?body=${encodeURIComponent(smsText)}" class="sms-button">طلب الباقة</a>
   `;
 
   container.appendChild(card);
