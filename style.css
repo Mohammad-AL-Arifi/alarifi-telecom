@@ -1,0 +1,105 @@
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f0f4f8;
+  direction: rtl;
+}
+
+.header {
+  background-color: #006c99;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo-space {
+  height: auto;
+  width: 50px;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #dbe9f4;
+ /* background-image: ;  */
+  /* size: 10%; */
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.package-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: scale(1.02);
+}
+
+.package-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+.package-price {
+  color: #006c99;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.package-detail {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.package-detail span {
+  margin-left: 8px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+footer {
+  background: #006c99;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
