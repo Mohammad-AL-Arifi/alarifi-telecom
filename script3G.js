@@ -27,7 +27,35 @@ const packages = [
     calls: "500",
     sms: "200",
     duration: "30"
-  }
+  },
+  {
+    title: "انترنت 150 ميجا (3G)",
+    price: "600",
+    internet: "150MB",
+    type: "3G",
+    duration: "30"
+  },
+  {
+    title: "انترنت 300 ميجا (3G)",
+    price: "1000",
+    internet: "300MB",
+    type: "3G",
+    duration: "30"
+  },
+  {
+    title: "انترنت 450 ميجا (3G)",
+    price: "1400",
+    internet: "450MB",
+    type: "3G",
+    duration: "30"
+  },
+  {
+    title: "نت 1 جيجا بصلاحية 10 أيام (3G)",
+    price: "1500",
+    internet: "1GB",
+    type: "3G",
+    duration: "10"
+  },
 ];
 
 const container = document.querySelector(".packages-grid");

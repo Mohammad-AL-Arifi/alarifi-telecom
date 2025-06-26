@@ -17,7 +17,7 @@ const packages = [
     duration: "30"
   },
   {
-    title: "مزايا 24 ساعة",
+    title: "مزايا 24 ساعة (4G)",
     price: "350",
     internet: "512MB",
     type: "4G",
@@ -26,7 +26,7 @@ const packages = [
     duration: "(24 ساعة) 1"
   },
   {
-    title: "مزايا 48 ساعة",
+    title: "مزايا 48 ساعة (4G)",
     price: "700",
     internet: "1GB",
     type: "4G",
@@ -44,7 +44,7 @@ const packages = [
     duration: "7"
   },
   {
-    title: "مزايا الشهرية",
+    title: "مزايا الشهرية (4G)",
     price: "2,700",
     internet: "4GB",
     type: "4G",
@@ -53,7 +53,7 @@ const packages = [
     duration: "30"
   },
   {
-    title: "مزايا ماكس",
+    title: "مزايا ماكس (4G)",
     price: "4,300",
     internet: "4GB",
     type: "4G",
@@ -70,7 +70,7 @@ packages.forEach(pkg => {
   const card = document.createElement("div");
   card.className = "package-card";
 
-  const smsText = `طلب باقة ${pkg.title} - ${pkg.price}`;
+  const smsText = `طلب باقة ${pkg.title} - ${pkg.price} ﷼`;
 
   card.innerHTML = `
     <div class="badge">جديد</div>

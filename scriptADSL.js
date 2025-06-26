@@ -32,7 +32,7 @@ packages.forEach(pkg => {
   const card = document.createElement("div");
   card.className = "package-card";
 
-  const smsText = `طلب باقة ${pkg.title} - ${pkg.price}`;
+  const smsText = `طلب باقة ${pkg.title} - ${pkg.price} ﷼`;
 
   card.innerHTML = `
     <div class="badge">جديد</div>
